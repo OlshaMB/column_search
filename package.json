@@ -1,0 +1,35 @@
+{
+  "name": "@datatables-plugs/column-search",
+  "version": "1.0.0",
+  "description": "A plugin for datatables adding search input for each column",
+  "author": "OlshaMB",
+  "main": "index.ts",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsup"
+  },
+  "peerDependencies": {
+    "datatables.net-dt": "^1.13.5"
+  },
+  "devDependencies": {
+    "@types/datatables.net": "^1.10.24",
+    "tsup": "^7.1.0"
+  },
+  "tsup": {
+    "entry": [
+      "index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true,
+    "format": [
+      "cjs",
+      "esm",
+      "iife"
+    ]
+    
+  }
+}
